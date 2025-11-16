@@ -83,7 +83,7 @@ const DressCode = () => {
               <p className="text-sm text-muted-foreground italic">
                 Gravata não é obrigatória — o visual pode ser leve e elegante!
               </p>
-              <h3 className="text-xl font-semibold text-primary">Madrinhas</h3>
+              <h3 className="text-xl font-semibold text-primary">Padrinhos</h3>
               {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate-fade-in">
                 {imagesConvidadas.map((image, index) => (
                   <div
