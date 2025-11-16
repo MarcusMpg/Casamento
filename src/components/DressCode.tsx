@@ -6,7 +6,7 @@ import convida1 from "@/assets/dressCode/imagem-convidadas01.png";
 import convida2 from "@/assets/dressCode/imagem-Convidada02.png";
 
 const DressCode = () => {
-  const imagesMaPa = [
+  /*  const imagesMaPa = [
     { src: madrinha1, alt: "Madrinha vestido rosa seco" },
     { src: madrinha2, alt: "Madrinha vestido rosa canela" },
     { src: padrinho, alt: "Padrinho traje esporte fino" },
@@ -15,6 +15,7 @@ const DressCode = () => {
     { src: convida1, alt: "Convidada vestido rosa seco" },
     { src: convida2, alt: "Convidada vestido rosa canela" },
   ];
+  */
   return (
     <section id="dresscode" className="py-20 px-4">
       <div className="container mx-auto max-w-4xl">
@@ -55,7 +56,7 @@ const DressCode = () => {
                 rose, mas essa cor não é exclusiva delas! Se você, convidada,
                 quiser usar também, sinta-se à vontade.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate-fade-in">
+              {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate-fade-in">
                 {imagesMaPa.map((image, index) => (
                   <div
                     key={index}
@@ -69,7 +70,7 @@ const DressCode = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
 
             <div className="space-y-4">
@@ -83,7 +84,7 @@ const DressCode = () => {
                 Gravata não é obrigatória — o visual pode ser leve e elegante!
               </p>
               <h3 className="text-xl font-semibold text-primary">Madrinhas</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate-fade-in">
+              {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate-fade-in">
                 {imagesConvidadas.map((image, index) => (
                   <div
                     key={index}
@@ -97,7 +98,7 @@ const DressCode = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
           </div>
 
