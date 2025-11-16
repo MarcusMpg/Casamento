@@ -1,6 +1,20 @@
 import { Shirt, Sparkles } from "lucide-react";
+import madrinha1 from "@/assets/dressCode/Imagem madrinhas 01.png";
+import madrinha2 from "@/assets/dressCode/Imagem madrinhas 02.png";
+import padrinho from "@/assets/dressCode/Padrinho.png";
+import convida1 from "@/assets/dressCode/Convidada 01.png";
+import convida2 from "@/assets/dressCode/Convidada 02.png";
 
 const DressCode = () => {
+  const imagesMaPa = [
+    { src: madrinha1, alt: "Madrinha vestido rosa seco" },
+    { src: madrinha2, alt: "Madrinha vestido rosa canela" },
+    { src: padrinho, alt: "Padrinho traje esporte fino" },
+  ];
+  const imagesConvidadas = [
+    { src: convida1, alt: "Convidada vestido rosa seco" },
+    { src: convida2, alt: "Convidada vestido rosa canela" },
+  ];
   return (
     <section id="dresscode" className="py-20 px-4">
       <div className="container mx-auto max-w-4xl">
@@ -19,9 +33,12 @@ const DressCode = () => {
           <div className="flex items-start gap-4 mb-8">
             <Sparkles className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-foreground">Esporte Fino</h3>
+              <h3 className="text-2xl font-bold mb-4 text-foreground">
+                Esporte Fino
+              </h3>
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                O traje escolhido é o esporte fino, o equilíbrio ideal entre conforto e elegância, para curtir o momento com estilo.
+                O traje escolhido é o esporte fino, o equilíbrio ideal entre
+                conforto e elegância, para curtir o momento com estilo.
               </p>
             </div>
           </div>
@@ -32,19 +49,51 @@ const DressCode = () => {
               <p className="text-muted-foreground">
                 Vestidos longos e fluídos, com tecidos leves e confortáveis.
               </p>
+              <h3 className="text-xl font-semibold text-primary">Madrinhas</h3>
               <p className="text-sm text-muted-foreground italic">
-                As madrinhas e damas usarão tons de rosa seco, rosa canela e rose, mas essa cor não é exclusiva delas! Se você, convidada, quiser usar também, sinta-se à vontade.
+                As madrinhas e damas usarão tons de rosa seco, rosa canela e
+                rose, mas essa cor não é exclusiva delas! Se você, convidada,
+                quiser usar também, sinta-se à vontade.
               </p>
+              {imagesMaPa.map((image, index) => (
+                <div
+                  key={index}
+                  className="group relative overflow-hidden rounded-2xl shadow-elegant hover:shadow-xl transition-all duration-300"
+                >
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+              ))}
             </div>
 
             <div className="space-y-4">
               <h4 className="text-xl font-semibold text-primary">Para Eles</h4>
               <p className="text-muted-foreground">
-                Camisa social de manga longa, calça de alfaiataria ou sarja, blazer leve ou terno (opcional). Sapatos sociais, loafers ou mocassins.
+                Camisa social de manga longa, calça de alfaiataria ou sarja,
+                blazer leve ou terno (opcional). Sapatos sociais, loafers ou
+                mocassins.
               </p>
               <p className="text-sm text-muted-foreground italic">
                 Gravata não é obrigatória — o visual pode ser leve e elegante!
               </p>
+              <h3 className="text-xl font-semibold text-primary">Madrinhas</h3>
+              {imagesConvidadas.map((image, index) => (
+                <div
+                  key={index}
+                  className="group relative overflow-hidden rounded-2xl shadow-elegant hover:shadow-xl transition-all duration-300"
+                >
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -53,7 +102,9 @@ const DressCode = () => {
               ⚠️ Atenção especial
             </p>
             <p className="text-muted-foreground">
-              Pedimos cuidado com as cores <strong>branco, off-white, bege</strong> e tons muito próximos a estas cores, pois são de exclusividade da noiva.
+              Pedimos cuidado com as cores{" "}
+              <strong>branco, off-white, bege</strong> e tons muito próximos a
+              estas cores, pois são de exclusividade da noiva.
             </p>
           </div>
         </div>
