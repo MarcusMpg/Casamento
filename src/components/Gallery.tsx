@@ -3,57 +3,57 @@ import heroImage from "@/assets/hero-wedding.jpg";
 import storyImage from "@/assets/story-sunset.jpg";
 import ceremonyImage from "@/assets/ceremony-venue.jpg";
 import receptionImage from "@/assets/reception-venue.jpg";
-import foto1 from "@/assets/ft1.jpg";
-import foto2 from "@/assets/ft2.jpg";
-import foto3 from "@/assets/ft3.jpg";
-import foto4 from "@/assets/ft4.jpg";
-import foto5 from "@/assets/ft5.jpg";
-import foto6 from "@/assets/ft6.jpg";
-import foto7 from "@/assets/ft7.jpg";
-import foto8 from "@/assets/ft8.jpg";
-import foto9 from "@/assets/ft9.jpg";
-import foto10 from "@/assets/ft10.jpg";
-import foto11 from "@/assets/ft11.jpg";
-import foto12 from "@/assets/ft12.jpg";
-import foto13 from "@/assets/ft13.jpg";
-import foto14 from "@/assets/ft14.jpg";
-import foto15 from "@/assets/ft15.jpg";
-import foto16 from "@/assets/ft16.jpg";
-import foto17 from "@/assets/ft17.jpg";
-import foto18 from "@/assets/ft18.jpg";
-import foto19 from "@/assets/ft19.jpg";
-import foto20 from "@/assets/ft20.jpg";
-import foto21 from "@/assets/ft21.jpg";
-import foto22 from "@/assets/ft22.jpg";
-import foto23 from "@/assets/ft23.jpg";
-import foto24 from "@/assets/ft24.jpg";
+import foto1 from "@/assets/gallery/ft1.jpg";
+import foto2 from "@/assets/gallery/ft2.jpg";
+import foto3 from "@/assets/gallery/ft3.jpg";
+import foto4 from "@/assets/gallery/ft4.jpg";
+import foto5 from "@/assets/gallery/ft5.jpg";
+import foto6 from "@/assets/gallery/ft6.jpg";
+import foto7 from "@/assets/gallery/ft7.jpg";
+import foto8 from "@/assets/gallery/ft8.jpg";
+import foto9 from "@/assets/gallery/ft9.jpg";
+import foto10 from "@/assets/gallery/ft10.jpg";
+import foto11 from "@/assets/gallery/ft11.jpg";
+import foto12 from "@/assets/gallery/ft12.jpg";
+import foto13 from "@/assets/gallery/ft13.jpg";
+import foto14 from "@/assets/gallery/ft14.jpg";
+import foto15 from "@/assets/gallery/ft15.jpg";
+import foto16 from "@/assets/gallery/ft16.jpg";
+import foto17 from "@/assets/gallery/ft17.jpg";
+import foto18 from "@/assets/gallery/ft18.jpg";
+import foto19 from "@/assets/gallery/ft19.jpg";
+import foto20 from "@/assets/gallery/ft20.jpg";
+import foto21 from "@/assets/gallery/ft21.jpg";
+import foto22 from "@/assets/gallery/ft22.jpg";
+import foto23 from "@/assets/gallery/ft23.jpg";
+import foto24 from "@/assets/gallery/ft24.jpg";
 
 const Gallery = () => {
   const images = [
-    //{ src: heroImage, alt: "Momento especial 1" },
-    // { src: storyImage, alt: "Momento especial 2" },
-    // { src: ceremonyImage, alt: "Momento especial 3" },
-    // { src: receptionImage, alt: "Momento especial 4" },
-    //  { src: foto1, alt: "Momento especial 5" },
-    { src: foto2, alt: "Momento especial 6" },
-    { src: foto3, alt: "Momento especial 7" },
-    { src: foto4, alt: "Momento especial 8" },
-    { src: foto5, alt: "Momento especial 9" },
-    { src: foto6, alt: "Momento especial 10" },
-    { src: foto7, alt: "Momento especial 11" },
-    { src: foto8, alt: "Momento especial 12" },
-    { src: foto9, alt: "Momento especial 13" },
-    { src: foto10, alt: "Momento especial 14" },
-    { src: foto11, alt: "Momento especial 15" },
-    { src: foto12, alt: "Momento especial 16" },
-    { src: foto13, alt: "Momento especial 17" },
-    { src: foto14, alt: "Momento especial 18" },
-    { src: foto15, alt: "Momento especial 19" },
-    { src: foto16, alt: "Momento especial 20" },
-    { src: foto17, alt: "Momento especial 21" },
-    { src: foto18, alt: "Momento especial 22" },
-    { src: foto19, alt: "Momento especial 23" },
-    { src: foto20, alt: "Momento especial 24" },
+    { src: foto1, alt: "Momento especial 1" },
+    { src: foto2, alt: "Momento especial 2" },
+    { src: foto3, alt: "Momento especial 3" },
+    { src: foto4, alt: "Momento especial 4" },
+    { src: foto5, alt: "Momento especial 5" },
+    { src: foto6, alt: "Momento especial 6" },
+    { src: foto7, alt: "Momento especial 7" },
+    { src: foto8, alt: "Momento especial 8" },
+    { src: foto9, alt: "Momento especial 9" },
+    { src: foto10, alt: "Momento especial 10" },
+    { src: foto11, alt: "Momento especial 11" },
+    { src: foto12, alt: "Momento especial 12" },
+    { src: foto13, alt: "Momento especial 13" },
+    { src: foto14, alt: "Momento especial 14" },
+    { src: foto15, alt: "Momento especial 15" },
+    { src: foto16, alt: "Momento especial 16" },
+    { src: foto17, alt: "Momento especial 17" },
+    { src: foto18, alt: "Momento especial 18" },
+    { src: foto19, alt: "Momento especial 19" },
+    { src: foto20, alt: "Momento especial 20" },
+    { src: foto21, alt: "Momento especial 21" },
+    { src: foto22, alt: "Momento especial 22" },
+    { src: foto23, alt: "Momento especial 23" },
+    { src: foto24, alt: "Momento especial 24" },
   ];
 
   return (
