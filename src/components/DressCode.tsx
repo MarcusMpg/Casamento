@@ -1,21 +1,6 @@
 import { Shirt, Sparkles } from "lucide-react";
-import madrinha1 from "@/assets/dressCode/imagem-madrinhas01.png";
-import madrinha2 from "@/assets/dressCode/imagem-madrinhas02.png";
-import padrinho from "@/assets/dressCode/padrinho.png";
-import convida1 from "@/assets/dressCode/imagem-convidadas01.png";
-import convida2 from "@/assets/dressCode/imagem-Convidada02.png";
 
 const DressCode = () => {
-  const imagesMaPa = [
-    { src: madrinha1, alt: "Madrinha vestido rosa seco" },
-    { src: madrinha2, alt: "Madrinha vestido rosa canela" },
-    { src: padrinho, alt: "Padrinho traje esporte fino" },
-  ];
-  const imagesConvidadas = [
-    { src: convida1, alt: "Convidada vestido rosa seco" },
-    { src: convida2, alt: "Convidada vestido rosa canela" },
-  ];
-
   return (
     <section id="dresscode" className="py-20 px-4">
       <div className="container mx-auto max-w-4xl">
@@ -56,21 +41,6 @@ const DressCode = () => {
                 rose, mas essa cor não é exclusiva delas! Se você, convidada,
                 quiser usar também, sinta-se à vontade.
               </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate-fade-in">
-                {imagesMaPa.map((image, index) => (
-                  <div
-                    key={index}
-                    className="group relative overflow-hidden rounded-2xl shadow-elegant hover:shadow-xl transition-all duration-300"
-                  >
-                    <img
-                      src={image.src}
-                      alt={image.alt}
-                      className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-                ))}
-              </div>
             </div>
 
             <div className="space-y-4">
