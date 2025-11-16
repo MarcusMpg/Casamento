@@ -32,7 +32,7 @@ const Gallery = () => {
   const images = [
     //{ src: heroImage, alt: "Momento especial 1" },
     // { src: storyImage, alt: "Momento especial 2" },
-    //{ src: ceremonyImage, alt: "Momento especial 3" },
+    // { src: ceremonyImage, alt: "Momento especial 3" },
     // { src: receptionImage, alt: "Momento especial 4" },
     //  { src: foto1, alt: "Momento especial 5" },
     { src: foto2, alt: "Momento especial 6" },
@@ -84,12 +84,6 @@ const Gallery = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
           ))}
-        </div>
-
-        <div className="mt-12 text-center">
-          <p className="text-lg text-muted-foreground italic">
-            Mais fotos em breve...
-          </p>
         </div>
       </div>
     </section>
