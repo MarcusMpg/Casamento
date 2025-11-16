@@ -1,7 +1,8 @@
-import { Gift, Heart } from "lucide-react";
+import { Gift, Heart, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { toast } from "sonner";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import qrCodePix from "@/assets/qr-code-pix.jpg";
 
 interface GiftItem {
   name: string;
@@ -10,6 +11,7 @@ interface GiftItem {
 
 const GiftRegistry = () => {
   const [selectedGift, setSelectedGift] = useState<GiftItem | null>(null);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   const gifts: GiftItem[] = [
     { name: "Vale mensagem para a noiva", price: "R$ 50,00" },
@@ -55,10 +57,7 @@ const GiftRegistry = () => {
 
   const handleGiftClick = (gift: GiftItem) => {
     setSelectedGift(gift);
-    toast.info("Informações do PIX", {
-      description: `Para presentear com "${gift.name}" no valor de ${gift.price}, utilize a chave PIX que será disponibilizada em breve.`,
-      duration: 5000,
-    });
+    setIsDialogOpen(true);
   };
 
   return (
@@ -106,6 +105,31 @@ const GiftRegistry = () => {
           </p>
         </div>
       </div>
+
+      <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle className="text-center">
+              {selectedGift?.name}
+            </DialogTitle>
+          </DialogHeader>
+          <div className="space-y-4">
+            <p className="text-center text-2xl font-bold text-primary">
+              {selectedGift?.price}
+            </p>
+            <div className="flex justify-center">
+              <img 
+                src={qrCodePix} 
+                alt="QR Code PIX para presente" 
+                className="w-full max-w-sm rounded-lg shadow-lg"
+              />
+            </div>
+            <p className="text-center text-sm text-muted-foreground">
+              Escaneie o QR Code acima para fazer o PIX
+            </p>
+          </div>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };
