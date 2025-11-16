@@ -9,11 +9,12 @@ const Footer = () => {
           <p className="text-2xl font-bold text-foreground">L & R</p>
           <Heart className="w-6 h-6 text-primary fill-primary" />
         </div>
-        <p className="text-muted-foreground mb-2">
-          24 de Janeiro de 2026
-        </p>
+        <p className="text-muted-foreground mb-2">24 de Janeiro de 2026</p>
         <p className="text-sm text-muted-foreground">
           Feito com amor para celebrar nosso para sempre
+        </p>
+        <p className="text-sm text-muted-foreground">
+          © 2026 @ DEV Marcus Matheus Gomes. Todos os direitos reservados.
         </p>
       </div>
     </footer>
