@@ -3,7 +3,7 @@ import madrinha1 from "@/assets/dressCode/Imagem-madrinhas01.png";
 import madrinha2 from "@/assets/dressCode/Imagem-madrinhas02.png";
 import padrinho from "@/assets/dressCode/Padrinho.png";
 import convida1 from "@/assets/dressCode/Imagem-convidadas01.png";
-import convida2 from "@/assets/dressCode/Imagem-convidadas02.png";
+import convida2 from "@/assets/dressCode/Imagem-Convidada02.png";
 
 const DressCode = () => {
   const imagesMaPa = [
