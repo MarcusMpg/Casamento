@@ -50,7 +50,7 @@ const DressCode = () => {
               <p className="text-muted-foreground">
                 Vestidos longos e fluídos, com tecidos leves e confortáveis.
               </p>
-              <h3 className="text-xl font-semibold text-primary">Madrinhas</h3>
+              {/* <h3 className="text-xl font-semibold text-primary">Madrinhas</h3> */}
               <p className="text-sm text-muted-foreground italic">
                 As madrinhas e damas usarão tons de rosa seco, rosa canela e
                 rose, mas essa cor não é exclusiva delas! Se você, convidada,
