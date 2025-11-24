@@ -48,11 +48,12 @@ const DressCode = () => {
               <p className="text-muted-foreground">
                 Camisa social de manga longa, calça de alfaiataria ou sarja,
                 blazer leve ou terno (opcional). Sapatos sociais, loafers ou
-                mocassins.
+                mocassins. Gravata não é obrigatória — o visual pode ser leve e
+                elegante!
               </p>
-              <p className="text-sm text-muted-foreground italic">
-                Gravata não é obrigatória — o visual pode ser leve e elegante!
-              </p>
+              {/* <p className="text-sm text-muted-foreground italic">
+                
+              </p> */}
               <h3 className="text-xl font-semibold text-primary">Padrinhos</h3>
               <p className="text-sm text-muted-foreground italic">
                 Os padrinhos usarão terno cinza claro, camisa branca, gravata
