@@ -74,7 +74,7 @@ const DressCode = () => {
                 />
               </div>
               <h3 className="text-xl font-semibold text-primary">Convidados</h3>
-              <div>
+              <div className="flex flex-wrap gap-4 justify-center">
                 <img
                   src={convidados1}
                   alt="Dress code dos padrinhos"
