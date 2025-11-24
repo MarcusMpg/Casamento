@@ -38,7 +38,7 @@ import faturaCartao from "@/assets/Presentes/27- Ajuda com a fatura do cartão d
 import psicologo from "@/assets/Presentes/28- Psicólogo para os noivos não surtarem com os preparativos.png";
 import cabeloNoivo from "@/assets/Presentes/29- Um ano de cabelo do noivo.png";
 import rotaMilagre from "@/assets/Presentes/30- passeio Rota dos milagres em maceio.png";
-import traslado from "@/assets/Presentes/31- Traslado do aeroporto_hotel_aeroporto.png";
+import traslado from "@/assets/Presentes/31- Traslado.png";
 import computador from "@/assets/Presentes/32- Peça nova de computador para o noivo.png";
 import convidadoPreferido from "@/assets/Presentes/33- Seja nosso convidado preferido.png";
 import passaporte from "@/assets/Presentes/34- .png";
