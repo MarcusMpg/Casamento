@@ -252,6 +252,11 @@ const GiftRegistry = () => {
               className="bg-card rounded-xl p-6 shadow-lg hover:shadow-elegant transition-all duration-300 hover:scale-105 text-left group"
             >
               <div className="flex items-start justify-between gap-3">
+                <img
+                  src={gift.image}
+                  alt={gift.name}
+                  className="w-12 h-12 object-contain mr-3"
+                />
                 <div className="flex-1">
                   <p className="text-foreground font-medium mb-2 group-hover:text-primary transition-colors">
                     {gift.name}
