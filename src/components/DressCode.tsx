@@ -1,4 +1,5 @@
 import { Shirt, Sparkles } from "lucide-react";
+import padrinhosImg from "@/assets/dressCode/padrinhos/padrinho.png";
 
 const DressCode = () => {
   return (
@@ -61,6 +62,13 @@ const DressCode = () => {
                 sapato e cinto marrom. Esse visual foi escolhido para manter a
                 harmonia do dia e deixar tudo ainda mais especial.
               </p>
+              <div>
+                <img
+                  src={padrinhosImg}
+                  alt="Dress code dos padrinhos"
+                  className="w-full max-w-xs mx-auto rounded-lg shadow-lg"
+                />{" "}
+              </div>
             </div>
           </div>
 
