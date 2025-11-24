@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/dialog";
 import qrCodePix from "@/assets/qr-code-pix.jpg";
 import valeMassagem from "@/assets/Presentes/1- Vale mensagem para a noiva.png";
-import lacday from "@/assets/Presentes/2- Lacday.png";
+import lacday from "@/assets/Presentes/2- Lacday.jpeg";
 import cofrinho from "@/assets/Presentes/3-Cofrinho da lua de mel.jpeg";
 import dosePaciencia from "@/assets/Presentes/4- Dose de paciência para o noivo esperar.png";
 import lenco from "@/assets/Presentes/5- Lenço.png";
