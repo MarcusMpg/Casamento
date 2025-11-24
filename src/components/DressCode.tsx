@@ -1,5 +1,6 @@
 import { Shirt, Sparkles } from "lucide-react";
 import padrinhosImg from "@/assets/dressCode/padrinhos/padrinho.png";
+import convidados1 from "@/assets/dressCode/convidados.jpeg";
 
 const DressCode = () => {
   return (
@@ -67,7 +68,15 @@ const DressCode = () => {
                   src={padrinhosImg}
                   alt="Dress code dos padrinhos"
                   className="w-full max-w-xs mx-auto rounded-lg shadow-lg"
-                />{" "}
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-primary">Convidados</h3>
+              <div>
+                <img
+                  src={convidados1}
+                  alt="Dress code dos padrinhos"
+                  className="w-full max-w-xs mx-auto rounded-lg shadow-lg"
+                />
               </div>
             </div>
           </div>
