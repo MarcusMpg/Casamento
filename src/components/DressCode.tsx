@@ -54,21 +54,12 @@ const DressCode = () => {
                 Gravata não é obrigatória — o visual pode ser leve e elegante!
               </p>
               <h3 className="text-xl font-semibold text-primary">Padrinhos</h3>
-              {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate-fade-in">
-                {imagesConvidadas.map((image, index) => (
-                  <div
-                    key={index}
-                    className="group relative overflow-hidden rounded-2xl shadow-elegant hover:shadow-xl transition-all duration-300"
-                  >
-                    <img
-                      src={image.src}
-                      alt={image.alt}
-                      className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
-                ))}
-              </div> */}
+              <p className="text-sm text-muted-foreground italic">
+                Os padrinhos usarão terno cinza claro, camisa branca, gravata
+                rosa (a mesma que enviamos na caixa dos padrinhos), além de
+                sapato e cinto marrom. Esse visual foi escolhido para manter a
+                harmonia do dia e deixar tudo ainda mais especial.
+              </p>
             </div>
           </div>
 
