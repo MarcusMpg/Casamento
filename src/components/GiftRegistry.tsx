@@ -255,7 +255,7 @@ const GiftRegistry = () => {
                 <img
                   src={gift.image}
                   alt={gift.name}
-                  className="w-12 h-12 object-contain mr-3"
+                  className="w-24 h-24 object-contain mr-3"
                 />
                 <div className="flex-1">
                   <p className="text-foreground font-medium mb-2 group-hover:text-primary transition-colors">
