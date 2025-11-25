@@ -10,7 +10,6 @@ const RSVP = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    guests: "1",
     message: "",
   });
 
@@ -20,7 +19,7 @@ const RSVP = () => {
       description:
         "Obrigado por confirmar sua presença! Estamos ansiosos para celebrar com você.",
     });
-    setFormData({ name: "", email: "", guests: "1", message: "" });
+    setFormData({ name: "", email: "", message: "" });
   };
 
   return (
