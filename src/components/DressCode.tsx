@@ -7,6 +7,9 @@ import convidados4 from "@/assets/dressCode/convidados04.png";
 
 import madrinha01 from "@/assets/dressCode/madrinhas/imagem-madrinhas01.png";
 import madrinha02 from "@/assets/dressCode/madrinhas/imagem-madrinhas02.png";
+import convidadas01 from "@/assets/dressCode/convidadas/convidadas01.png";
+import convidadas02 from "@/assets/dressCode/convidadas/convidada02.png";
+import convidadas03 from "@/assets/dressCode/convidadas/convidada03.png";
 
 const DressCode = () => {
   return (
@@ -62,6 +65,23 @@ const DressCode = () => {
                 />
               </div>
               <h3 className="text-xl font-semibold text-primary">Convidadas</h3>
+              <div>
+                <img
+                  src={convidadas01}
+                  alt="Dress code das madrinhas"
+                  className="w-full max-w-xs mx-auto rounded-lg shadow-lg"
+                />
+                <img
+                  src={convidadas02}
+                  alt="Dress code das madrinhas"
+                  className="w-full max-w-xs mx-auto rounded-lg shadow-lg"
+                />
+                <img
+                  src={convidadas03}
+                  alt="Dress code das madrinhas"
+                  className="w-full max-w-xs mx-auto rounded-lg shadow-lg"
+                />
+              </div>
             </div>
 
             <div className="space-y-4">
