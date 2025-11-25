@@ -5,6 +5,9 @@ import convidados2 from "@/assets/dressCode/convidados02.png";
 import convidados3 from "@/assets/dressCode/convidados03.png";
 import convidados4 from "@/assets/dressCode/convidados04.png";
 
+import madrinha01 from "@/assets/dressCode/madrinhas/imagem-madrinhas01.png";
+import madrinha02 from "@/assets/dressCode/madrinhas/imagem-madrinhas02.png";
+
 const DressCode = () => {
   return (
     <section id="dresscode" className="py-20 px-4">
@@ -46,6 +49,19 @@ const DressCode = () => {
                 rose, mas essa cor não é exclusiva delas! Se você, convidada,
                 quiser usar também, sinta-se à vontade.
               </p>
+              <div>
+                <img
+                  src={madrinha01}
+                  alt="Dress code das madrinhas"
+                  className="w-full max-w-xs mx-auto rounded-lg shadow-lg"
+                />
+                <img
+                  src={madrinha02}
+                  alt="Dress code das madrinhas"
+                  className="w-full max-w-xs mx-auto rounded-lg shadow-lg"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-primary">Convidadas</h3>
             </div>
 
             <div className="space-y-4">
