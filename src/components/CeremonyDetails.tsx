@@ -1,6 +1,6 @@
 import { MapPin, Clock, Calendar } from "lucide-react";
-import ceremonyImage from "@/assets/ceremony-venue.jpg";
-import receptionImage from "@/assets/reception-venue.jpg";
+import ceremonyImage from "@/assets/locais/Capela Santa Rosa.jpeg";
+import receptionImage from "@/assets/locais/LARGO DA 16.jpeg";
 
 const CeremonyDetails = () => {
   return (
@@ -23,9 +23,9 @@ const CeremonyDetails = () => {
           {/* Cerimônia */}
           <div className="bg-card rounded-2xl p-8 shadow-elegant animate-slide-up">
             <div className="mb-6">
-              <img 
-                src={ceremonyImage} 
-                alt="Capela" 
+              <img
+                src={ceremonyImage}
+                alt="Capela"
                 className="w-full h-64 object-cover rounded-xl"
               />
             </div>
@@ -49,9 +49,12 @@ const CeremonyDetails = () => {
                 <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                 <div>
                   <p className="font-semibold text-foreground">Local</p>
-                  <p className="text-muted-foreground">Capela do Colégio Santa Rosa</p>
+                  <p className="text-muted-foreground">
+                    Capela do Colégio Santa Rosa
+                  </p>
                   <p className="text-sm text-muted-foreground">
-                    Travessa Padre Eutíquio, 1549<br />
+                    Travessa Padre Eutíquio, 1549
+                    <br />
                     Batista Campos, Belém-PA
                   </p>
                 </div>
@@ -62,9 +65,9 @@ const CeremonyDetails = () => {
           {/* Recepção */}
           <div className="bg-card rounded-2xl p-8 shadow-elegant animate-slide-up">
             <div className="mb-6">
-              <img 
-                src={receptionImage} 
-                alt="Recepção" 
+              <img
+                src={receptionImage}
+                alt="Recepção"
                 className="w-full h-64 object-cover rounded-xl"
               />
             </div>
@@ -90,7 +93,8 @@ const CeremonyDetails = () => {
                   <p className="font-semibold text-foreground">Local</p>
                   <p className="text-muted-foreground">Largo da 16</p>
                   <p className="text-sm text-muted-foreground">
-                    Avenida 16 de Novembro, 41<br />
+                    Avenida 16 de Novembro, 41
+                    <br />
                     Cidade Velha, Belém-PA
                   </p>
                 </div>
