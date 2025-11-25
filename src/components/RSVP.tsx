@@ -17,7 +17,8 @@ const RSVP = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast.success("Confirmação enviada!", {
-      description: "Obrigado por confirmar sua presença! Estamos ansiosos para celebrar com você.",
+      description:
+        "Obrigado por confirmar sua presença! Estamos ansiosos para celebrar com você.",
     });
     setFormData({ name: "", email: "", guests: "1", message: "" });
   };
@@ -35,11 +36,15 @@ const RSVP = () => {
             <div className="h-px w-20 bg-primary"></div>
           </div>
           <p className="text-lg text-muted-foreground">
-            Por favor, confirme sua presença até <strong>30 de Junho de 2026</strong>
+            Por favor, confirme sua presença até{" "}
+            <strong>30 de Junho de 2026</strong>
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="bg-card rounded-2xl p-8 md:p-12 shadow-elegant animate-slide-up">
+        <form
+          onSubmit={handleSubmit}
+          className="bg-card rounded-2xl p-8 md:p-12 shadow-elegant animate-slide-up"
+        >
           <div className="space-y-6">
             <div>
               <Label htmlFor="name" className="text-lg font-medium">
@@ -50,7 +55,9 @@ const RSVP = () => {
                 type="text"
                 required
                 value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, name: e.target.value })
+                }
                 className="mt-2 h-12 text-lg"
                 placeholder="Seu nome"
               />
@@ -65,27 +72,13 @@ const RSVP = () => {
                 type="email"
                 required
                 value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, email: e.target.value })
+                }
                 className="mt-2 h-12 text-lg"
                 placeholder="seu@email.com"
               />
             </div>
-
-            <div>
-              <Label htmlFor="guests" className="text-lg font-medium">
-                Número de Acompanhantes
-              </Label>
-              <Input
-                id="guests"
-                type="number"
-                min="0"
-                max="5"
-                value={formData.guests}
-                onChange={(e) => setFormData({ ...formData, guests: e.target.value })}
-                className="mt-2 h-12 text-lg"
-              />
-            </div>
-
             <div>
               <Label htmlFor="message" className="text-lg font-medium">
                 Deixe uma Mensagem para os Noivos
@@ -93,7 +86,9 @@ const RSVP = () => {
               <Textarea
                 id="message"
                 value={formData.message}
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, message: e.target.value })
+                }
                 className="mt-2 min-h-32 text-lg"
                 placeholder="Sua mensagem de carinho..."
               />
