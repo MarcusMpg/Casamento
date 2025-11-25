@@ -52,7 +52,7 @@ const DressCode = () => {
                 rose, mas essa cor não é exclusiva delas! Se você, convidada,
                 quiser usar também, sinta-se à vontade.
               </p>
-              <div>
+              <div className="flex flex-wrap gap-4 justify-center">
                 <img
                   src={madrinha01}
                   alt="Dress code das madrinhas"
@@ -65,7 +65,7 @@ const DressCode = () => {
                 />
               </div>
               <h3 className="text-xl font-semibold text-primary">Convidadas</h3>
-              <div>
+              <div className="flex flex-wrap gap-4 justify-center">
                 <img
                   src={convidadas01}
                   alt="Dress code das madrinhas"
