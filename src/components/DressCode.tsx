@@ -30,10 +30,10 @@ const DressCode = () => {
           <div className="flex items-start gap-4 mb-8">
             <Sparkles className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-foreground">
+              <h3 className="text-2xl font-bold mb-4 text-foreground ">
                 Esporte Fino
               </h3>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6 text-justify">
                 O traje escolhido é o esporte fino, o equilíbrio ideal entre
                 conforto e elegância, para curtir o momento com estilo.
               </p>
@@ -47,7 +47,7 @@ const DressCode = () => {
                 Vestidos longos e fluídos, com tecidos leves e confortáveis.
               </p>
               <h3 className="text-xl font-semibold text-primary">Madrinhas</h3>
-              <p className="text-sm text-muted-foreground italic">
+              <p className="text-sm text-muted-foreground italic text-justify">
                 As madrinhas e damas usarão tons de rosa seco, rosa canela e
                 rose, mas essa cor não é exclusiva delas! Se você, convidada,
                 quiser usar também, sinta-se à vontade.
@@ -86,7 +86,7 @@ const DressCode = () => {
 
             <div className="space-y-4">
               <h4 className="text-xl font-semibold text-primary">Para Eles</h4>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground text-justify">
                 Camisa social de manga longa, calça de alfaiataria ou sarja,
                 blazer leve ou terno (opcional). Sapatos sociais, loafers ou
                 mocassins. Gravata não é obrigatória — o visual pode ser leve e
@@ -96,7 +96,7 @@ const DressCode = () => {
                 
               </p> */}
               <h3 className="text-xl font-semibold text-primary">Padrinhos</h3>
-              <p className="text-sm text-muted-foreground italic">
+              <p className="text-sm text-muted-foreground italic text-justify">
                 Os padrinhos usarão terno cinza claro, camisa branca, gravata
                 rosa (a mesma que enviamos na caixa dos padrinhos), além de
                 sapato e cinto marrom. Esse visual foi escolhido para manter a
