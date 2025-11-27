@@ -78,8 +78,15 @@ const Gallery = () => {
             >
               <img
                 src={image.src}
+                alt=""
+                aria-hidden="true"
+                className="absolute inset-0 w-full h-full object-cover blur-lg scale-110"
+              />
+
+              <img
+                src={image.src}
                 alt={image.alt}
-                className="w-full h-80 object-contain bg-black group-hover:scale-105 transition-transform duration-500"
+                className="relative w-full h-80 object-contain"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
