@@ -1,5 +1,5 @@
 import { Shirt, Sparkles } from "lucide-react";
-import padrinhosImg from "@/assets/dressCode/padrinhos/padrinho.png";
+import padrinhosImg from "@/assets/dressCode/padrinho.png";
 import convidados1 from "@/assets/dressCode/convidados01.png";
 import convidados2 from "@/assets/dressCode/convidados02.png";
 import convidados3 from "@/assets/dressCode/convidado03.png";
@@ -33,7 +33,7 @@ const DressCode = () => {
               <h3 className="text-2xl font-bold mb-4 text-foreground ">
                 Esporte Fino
               </h3>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6 text-justify">
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-6 text-justify">
                 O traje escolhido é o esporte fino, o equilíbrio ideal entre
                 conforto e elegância, para curtir o momento com estilo.
               </p>
@@ -42,12 +42,16 @@ const DressCode = () => {
 
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div className="space-y-4">
-              <h4 className="text-xl font-semibold text-primary">Para Elas</h4>
-              <p className="text-muted-foreground">
+              <h4 className="text-xl md:text-2xl font-semibold text-primary">
+                Para Elas
+              </h4>
+              <p className="text-muted-foreground md:text-lg">
                 Vestidos longos e fluídos, com tecidos leves e confortáveis.
               </p>
-              <h3 className="text-xl font-semibold text-primary">Madrinhas</h3>
-              <p className="text-sm text-muted-foreground italic text-justify">
+              <h3 className="text-xl md:text-2xl font-semibold text-primary">
+                Madrinhas
+              </h3>
+              <p className="text-sm md:text-base text-muted-foreground italic text-justify">
                 As madrinhas e damas usarão tons de rosa seco, rosa canela e
                 rose, mas essa cor não é exclusiva delas! Se você, convidada,
                 quiser usar também, sinta-se à vontade.
@@ -64,7 +68,9 @@ const DressCode = () => {
                   className="w-full max-w-xs mx-auto rounded-lg shadow-lg"
                 />
               </div>
-              <h3 className="text-xl font-semibold text-primary">Convidadas</h3>
+              <h3 className="text-xl md:text-2xl font-semibold text-primary">
+                Convidadas
+              </h3>
               <div className="flex flex-wrap gap-4 justify-center">
                 <img
                   src={convidadas01}
@@ -85,8 +91,10 @@ const DressCode = () => {
             </div>
 
             <div className="space-y-4">
-              <h4 className="text-xl font-semibold text-primary">Para Eles</h4>
-              <p className="text-muted-foreground text-justify">
+              <h4 className="text-xl md:text-2xl font-semibold text-primary">
+                Para Eles
+              </h4>
+              <p className="text-muted-foreground text-justify md:text-lg">
                 Camisa social de manga longa, calça de alfaiataria ou sarja,
                 blazer leve ou terno (opcional). Sapatos sociais, loafers ou
                 mocassins. Gravata não é obrigatória — o visual pode ser leve e
@@ -95,8 +103,10 @@ const DressCode = () => {
               {/* <p className="text-sm text-muted-foreground italic">
                 
               </p> */}
-              <h3 className="text-xl font-semibold text-primary">Padrinhos</h3>
-              <p className="text-sm text-muted-foreground italic text-justify">
+              <h3 className="text-xl md:text-2xl font-semibold text-primary">
+                Padrinhos
+              </h3>
+              <p className="text-sm md:text-base text-muted-foreground italic text-justify">
                 Os padrinhos usarão terno cinza claro, camisa branca, gravata
                 rosa (a mesma que enviamos na caixa dos padrinhos), além de
                 sapato e cinto marrom. Esse visual foi escolhido para manter a
@@ -109,7 +119,9 @@ const DressCode = () => {
                   className="w-full max-w-xs mx-auto rounded-lg shadow-lg"
                 />
               </div>
-              <h3 className="text-xl font-semibold text-primary">Convidados</h3>
+              <h3 className="text-xl md:text-2xl font-semibold text-primary">
+                Convidados
+              </h3>
               <div className="flex flex-wrap gap-4 justify-center">
                 <img
                   src={convidados1}
