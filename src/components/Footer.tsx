@@ -14,7 +14,15 @@ const Footer = () => {
           Feito com amor para celebrar nosso para sempre
         </p>
         <p className="text-sm text-muted-foreground">
-          © 2026 @ DEV Marcus Matheus Gomes. Todos os direitos reservados.
+          © 2026{" "}
+          <a
+            href="https://www.linkedin.com/in/marcusmatheuspereiragomes/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @ DEV Marcus Matheus Gomes
+          </a>
+          . Todos os direitos reservados.
         </p>
       </div>
     </footer>
