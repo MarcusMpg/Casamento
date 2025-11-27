@@ -1,5 +1,5 @@
 import { Shirt, Sparkles } from "lucide-react";
-import padrinhosImg from "@/assets/dressCode/padrinho.png";
+import padrinhosImg from "@/assets/dressCode/padrinhos/padrinho.png";
 import convidados1 from "@/assets/dressCode/convidados01.png";
 import convidados2 from "@/assets/dressCode/convidados02.png";
 import convidados3 from "@/assets/dressCode/convidado03.png";
