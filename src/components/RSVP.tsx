@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 import { Heart, Send } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 const RSVP = () => {
   const [formData, setFormData] = useState({
@@ -19,7 +20,27 @@ const RSVP = () => {
       description:
         "Obrigado por confirmar sua presença! Estamos ansiosos para celebrar com você.",
     });
-    setFormData({ name: "", email: "", message: "" });
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      message: formData.message,
+    };
+    emailjs
+      .send(
+        "service_qvzwp7x",
+        "template_u6mzda7",
+        templateParams,
+        "7JOgjqcuaG9jNqAn-"
+      )
+      .then(
+        (response) => {
+          console.log("EMAIL ENVIADO", response.status, response.text);
+          setFormData({ name: "", email: "", message: "" });
+        },
+        (err) => {
+          console.log("ERROR ", err);
+        }
+      );
   };
 
   return (
