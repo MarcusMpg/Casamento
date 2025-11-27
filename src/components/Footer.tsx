@@ -19,6 +19,8 @@ const Footer = () => {
             href="https://www.linkedin.com/in/marcusmatheuspereiragomes/"
             target="_blank"
             rel="noopener noreferrer"
+            className="font-semibold underline transition-colors"
+            style={{ color: "#B76E79" }}
           >
             @ DEV Marcus Matheus Gomes
           </a>
