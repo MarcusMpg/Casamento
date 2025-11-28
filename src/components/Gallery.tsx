@@ -95,8 +95,14 @@ const Gallery = () => {
 
         {/* Modal/Card expandido */}
         {selectedImage && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80">
-            <div className="relative bg-card rounded-2xl shadow-2xl p-4 max-w-3xl w-full flex flex-col items-center">
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/80"
+            onClick={() => setSelectedImage(null)}
+          >
+            <div
+              className="relative bg-card rounded-2xl shadow-2xl p-4 max-w-3xl w-full flex flex-col items-center"
+              onClick={e => e.stopPropagation()} // Impede fechar ao clicar dentro do card
+            >
               <button
                 className="absolute top-4 right-4 text-white hover:text-primary transition-colors"
                 onClick={() => setSelectedImage(null)}
