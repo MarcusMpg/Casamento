@@ -1,8 +1,21 @@
-import { MapPin, Clock, Calendar } from "lucide-react";
+import { MapPin, Clock, Calendar, Map } from "lucide-react";
 import ceremonyImage from "@/assets/locais/Capela Santa Rosa.jpeg";
 import receptionImage from "@/assets/locais/LARGO DA 16.jpeg";
 
 const CeremonyDetails = () => {
+  // Links do Google Maps para cada local
+  const ceremonyMapUrl =
+    "https://www.google.com/maps/search/?api=1&query=Travessa+Padre+Eutíquio,+1549,+Belém-PA";
+  const receptionMapUrl =
+    "https://www.google.com/maps/search/?api=1&query=Avenida+16+de+Novembro,+41,+Belém-PA";
+
+  // Função para abrir o link apenas em telas pequenas
+  const openMap = (url: string) => {
+    if (window.innerWidth < 768) {
+      window.open(url, "_blank");
+    }
+  };
+
   return (
     <section id="cerimonia" className="py-20 px-4 bg-gradient-romantic">
       <div className="container mx-auto max-w-6xl">
@@ -57,6 +70,14 @@ const CeremonyDetails = () => {
                     <br />
                     Batista Campos, Belém-PA
                   </p>
+                  {/* Botão para abrir o Maps no mobile */}
+                  <button
+                    className="mt-3 flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-white text-sm font-semibold shadow hover:bg-primary/90 transition-colors md:hidden"
+                    onClick={() => openMap(ceremonyMapUrl)}
+                  >
+                    <Map className="w-4 h-4" />
+                    Abrir no Google Maps
+                  </button>
                 </div>
               </div>
             </div>
@@ -97,6 +118,14 @@ const CeremonyDetails = () => {
                     <br />
                     Cidade Velha, Belém-PA
                   </p>
+                  {/* Botão para abrir o Maps no mobile */}
+                  <button
+                    className="mt-3 flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-white text-sm font-semibold shadow hover:bg-primary/90 transition-colors md:hidden"
+                    onClick={() => openMap(receptionMapUrl)}
+                  >
+                    <Map className="w-4 h-4" />
+                    Abrir no Google Maps
+                  </button>
                 </div>
               </div>
             </div>
