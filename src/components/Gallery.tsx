@@ -1,4 +1,5 @@
-import { Camera } from "lucide-react";
+import { useState } from "react";
+import { Camera, X } from "lucide-react";
 import heroImage from "@/assets/hero-wedding.jpg";
 import storyImage from "@/assets/story-sunset.jpg";
 import ceremonyImage from "@/assets/ceremony-venue.jpg";
@@ -56,6 +57,11 @@ const Gallery = () => {
     { src: foto24, alt: "Momento especial 24" },
   ];
 
+  const [selectedImage, setSelectedImage] = useState<null | {
+    src: string;
+    alt: string;
+  }>(null);
+
   return (
     <section id="galeria" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
@@ -74,24 +80,41 @@ const Gallery = () => {
           {images.map((image, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl shadow-elegant hover:shadow-xl transition-all duration-300"
+              className="group relative overflow-hidden rounded-2xl shadow-elegant hover:shadow-xl transition-all duration-300 cursor-pointer"
+              onClick={() => setSelectedImage(image)}
             >
               <img
                 src={image.src}
-                alt=""
-                aria-hidden="true"
-                className="absolute inset-0 w-full h-full object-cover blur-lg scale-110"
-              />
-
-              <img
-                src={image.src}
                 alt={image.alt}
-                className="relative w-full h-80 object-contain"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
           ))}
         </div>
+
+        {/* Modal/Card expandido */}
+        {selectedImage && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80">
+            <div className="relative bg-card rounded-2xl shadow-2xl p-4 max-w-3xl w-full flex flex-col items-center">
+              <button
+                className="absolute top-4 right-4 text-white hover:text-primary transition-colors"
+                onClick={() => setSelectedImage(null)}
+                aria-label="Fechar"
+              >
+                <X className="w-8 h-8" />
+              </button>
+              <img
+                src={selectedImage.src}
+                alt={selectedImage.alt}
+                className="max-h-[80vh] w-auto object-contain rounded-lg"
+              />
+              <p className="mt-4 text-center text-lg text-foreground">
+                {selectedImage.alt}
+              </p>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
