@@ -60,7 +60,7 @@ const OurStory = () => {
             <strong>Alter do Chão</strong>.
           </p>
           <p className="text-justify">
-            No dia <strong>25 de outubro de 2025</strong>, estava tudo planejado
+            No dia <strong>25 de outubro de 2024</strong>, estava tudo planejado
             — até fotógrafo o noivo contratou para registrar o grande momento.
             Mas, como toda boa história de amor, a emoção não poderia faltar: no
             caminho para o local do pedido, o carro atolou em uma estrada de
