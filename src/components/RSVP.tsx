@@ -57,7 +57,7 @@ const RSVP = () => {
           </div>
           <p className="text-lg text-muted-foreground">
             Por favor, confirme sua presença até{" "}
-            <strong>30 de janeiro de 2025</strong>
+            <strong>30 de Dezembro de 2025</strong>
           </p>
         </div>
 
