@@ -178,7 +178,7 @@ const GiftRegistry = () => {
     },
     { name: "Rota dos milagres", price: "R$ 660,00", image: rotaMilagre },
     {
-      name: "Traslado do aeroporto/hotel/aeroporto",
+      name: "Traslado do aeroporto/hotel",
       price: "R$ 680,00",
       image: traslado,
     },
