@@ -47,7 +47,10 @@ const RSVP = () => {
     <section id="rsvp" className="py-20 px-4 bg-gradient-romantic">
       <div className="container mx-auto max-w-2xl">
         <div className="text-center mb-12 animate-slide-up">
-          <h2 className="text-5xl md:text-6xl font-bold mb-4 text-foreground">
+          <h2
+            className="text-5xl md:text-6xl font-bold mb-4 text-foreground"
+            translate="no"
+          >
             Confirme sua Presença
           </h2>
           <div className="flex items-center justify-center gap-4 mb-6">
@@ -55,7 +58,7 @@ const RSVP = () => {
             <Heart className="w-8 h-8 text-primary" />
             <div className="h-px w-20 bg-primary"></div>
           </div>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-muted-foreground" translate="no">
             Por favor, confirme sua presença até{" "}
             <strong>30 de Dezembro de 2025</strong>
           </p>
@@ -67,7 +70,11 @@ const RSVP = () => {
         >
           <div className="space-y-6">
             <div>
-              <Label htmlFor="name" className="text-lg font-medium">
+              <Label
+                htmlFor="name"
+                className="text-lg font-medium"
+                translate="no"
+              >
                 Nome Completo *
               </Label>
               <Input
@@ -84,7 +91,11 @@ const RSVP = () => {
             </div>
 
             <div>
-              <Label htmlFor="email" className="text-lg font-medium">
+              <Label
+                htmlFor="email"
+                className="text-lg font-medium"
+                translate="no"
+              >
                 E-mail *
               </Label>
               <Input
@@ -100,7 +111,11 @@ const RSVP = () => {
               />
             </div>
             <div>
-              <Label htmlFor="message" className="text-lg font-medium">
+              <Label
+                htmlFor="message"
+                className="text-lg font-medium"
+                translate="no"
+              >
                 Deixe uma Mensagem para os Noivos
               </Label>
               <Textarea
