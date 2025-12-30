@@ -20,7 +20,10 @@ const CeremonyDetails = () => {
     <section id="cerimonia" className="py-20 px-4 bg-gradient-romantic">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-slide-up">
-          <h2 className="text-5xl md:text-6xl font-bold mb-4 text-foreground">
+          <h2
+            className="text-5xl md:text-6xl font-bold mb-4 text-foreground"
+            translate="no"
+          >
             Cerimônia & Recepção
           </h2>
           <div className="flex items-center justify-center gap-4">
