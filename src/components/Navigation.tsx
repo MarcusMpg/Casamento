@@ -24,19 +24,25 @@ const Navigation = () => {
   ];
 
   return (
-    <nav 
+    <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-card/95 backdrop-blur-md shadow-elegant" : "bg-transparent"
+        isScrolled
+          ? "bg-card/95 backdrop-blur-md shadow-elegant"
+          : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          <a href="#inicio" className="text-2xl font-bold text-primary">
+          <a
+            href="#inicio"
+            className="text-2xl font-bold text-primary"
+            translate="no"
+          >
             L & R
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-8" translate="no">
             {navItems.map((item) => (
               <a
                 key={item.name}
@@ -59,7 +65,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden pb-4 animate-slide-up">
+          <div className="md:hidden pb-4 animate-slide-up" translate="no">
             {navItems.map((item) => (
               <a
                 key={item.name}
